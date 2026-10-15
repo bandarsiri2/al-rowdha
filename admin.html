@@ -1,0 +1,213 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — AL-ROWDHA</title>
+<meta name="description" content="Handcrafted prayer rugs, sharashef bedding, mabkharas, oud perfume and robes — woven and embroidered in the heart of Anatolia.">
+<script>(function(){var l=localStorage.getItem("arlang")||"en";document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&family=Cairo:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="admin.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230d3b30'/%3E%3Cg fill='none' stroke='%23c9a13b' stroke-width='1.6'%3E%3Crect x='12' y='12' width='24' height='24'/%3E%3Crect x='12' y='12' width='24' height='24' transform='rotate(45 24 24)'/%3E%3Ccircle cx='24' cy='24' r='6'/%3E%3C/g%3E%3C/svg%3E">
+</head>
+<body>
+<body>
+<div class="announce" data-i18n="announce">Free shipping on orders over $150 • New expanded collections now live</div>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="AL-ROWDHA home">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <rect x="10" y="10" width="28" height="28"/><rect x="10" y="10" width="28" height="28" transform="rotate(45 24 24)"/><circle cx="24" cy="24" r="7"/>
+      </svg>
+      <span><span class="brand-name" data-i18n="brand">AL-ROWDHA</span><br><span class="brand-sub" data-i18n="brand_sub">CARPET</span></span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+      <a href="prayer-rugs.html" data-i18n="nav_shop">Shop</a>
+      <a href="prayer-rugs.html" data-i18n="nav_collections">Collections</a>
+      <a href="craftsmanship.html" data-i18n="nav_about">About</a>
+      <a href="craftsmanship.html" data-i18n="nav_craft">Craftsmanship</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="head-actions">
+      <button class="icon-btn" data-i18n-title="search" title="Search"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" data-i18n-title="account" title="Account"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg></button>
+      <button class="icon-btn cart-btn" data-i18n-title="cart" title="Cart"><svg class="ic" viewBox="0 0 24 24"><path d="M6 7h12l1.5 13.5h-15L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="badge cart-count" style="display:none">0</span></button>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button data-lang="en">EN</button><button data-lang="ar" dir="rtl">عربي</button>
+      </div>
+      <button class="icon-btn nav-burger" title="Menu"><svg class="ic" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+  <main class="admin-main">
+    <div class="container">
+      <div class="admin-login" id="login-view">
+        <span class="brand">AL-ROWDHA</span>
+        <h2 data-i18n="ad_login">Admin Panel</h2>
+        <p class="hint" style="margin-top:0" data-i18n="ad_logintxt">Enter your access code to continue.</p>
+        <div class="err" id="login-err"></div>
+        <label class="fld"><span data-i18n="ad_email">Email</span><input type="email" id="login-email" autocomplete="off"></label>
+        <label class="fld"><span data-i18n="ad_pass">Password</span><input type="password" id="login-pass" autocomplete="off"></label>
+        <button class="btn btn-emerald btn-block" id="login-btn" data-i18n="ad_loginbtn">Log in</button>
+        <p class="hint" data-i18n="ad_loginhint">Changes are saved in this browser.</p>
+        <p style="text-align:center;margin-bottom:0"><a href="index.html" data-i18n="ad_viewsite">← Back to site</a></p>
+      </div>
+      <div id="dash-view" hidden>
+        <div class="admin-head">
+          <h1>AL-ROWDHA <span style="font-size:.8rem;letter-spacing:.2em;color:var(--gold-600,#b08a3e)">— ADMIN</span></h1>
+          <div class="admin-actions">
+            <button class="btn btn-outline" onclick="window.open('index.html','_self')" data-i18n="ad_viewsite">View Site</button>
+            <button class="btn btn-outline" id="btn-reset" data-i18n="ad_reset">Reset All Changes</button>
+            <button class="btn btn-gold" id="btn-logout" data-i18n="ad_logout">Log out</button>
+          </div>
+        </div>
+        <div class="admin-tabs">
+          <button class="active" data-tab="products" data-i18n="ad_products">Products</button>
+          <button data-tab="orders" data-i18n="ad_orders">Orders</button>
+          <button data-tab="photos" data-i18n="ad_photos">Photos</button>
+          <button data-tab="content" data-i18n="ad_content">Site Content</button>
+        </div>
+        
+    <section class="admin-tab active" id="tab-products">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+        <h2 style="font-family:var(--font-serif);margin:0;color:var(--emerald-900)" data-i18n="ad_products">Products</h2>
+        <button class="btn btn-emerald" id="btn-add">+ <span data-i18n="ad_add">Add Product</span></button>
+      </div>
+      <div class="admin-form" id="pform" hidden>
+        <h3 id="pform-title">Add Product</h3>
+        <input type="hidden" id="pf-id">
+        <div class="frow">
+          <label class="fld"><span>Name (English)</span><input id="pf-name-en" placeholder="Emerald Lattice Prayer Rug"></label>
+          <label class="fld"><span>Name (Arabic)</span><input id="pf-name-ar" dir="rtl" placeholder="سجادة صلاة"></label>
+        </div>
+        <div class="frow4">
+          <label class="fld"><span>Price ($)</span><input id="pf-price" type="number" min="1" step="1" value="150"></label>
+          <label class="fld"><span>Category</span><select id="pf-cat"><option value="prayer">Prayer Rugs</option><option value="robes">Robes</option><option value="perfume">Perfume</option><option value="mabkhara">Mabkhara</option><option value="bedding">Bedding</option></select></label>
+          <label class="fld"><span>Color</span><select id="pf-color"><option value="emerald">Emerald</option><option value="gold">Gold</option><option value="beige">Beige</option></select></label>
+          <label class="fld"><span>Material</span><select id="pf-mat"><option value="wool">Wool</option><option value="silk">Silk</option><option value="cotton">Cotton</option></select></label>
+        </div>
+        <div class="frow4">
+          <label class="fld"><span>Size</span><input id="pf-size" placeholder="70x120cm" value="70x120cm"></label>
+          <label class="fld"><span>Badge</span><select id="pf-badge"><option value="">None</option><option value="bestseller">Bestseller</option><option value="new">New</option></select></label>
+          <label class="fld"><span>Stock</span><input id="pf-stock" type="number" min="0" value="20"></label>
+          <label class="fld"><span>Rating (0–5)</span><input id="pf-rating" type="number" min="0" max="5" step="0.1" value="4.8"></label>
+        </div>
+        <div class="frow">
+          <label class="fld"><span>Description (English)</span><textarea id="pf-desc-en" placeholder="Handwoven…"></textarea></label>
+          <label class="fld"><span>Description (Arabic)</span><textarea id="pf-desc-ar" dir="rtl" placeholder="منسوجة يدوياً…"></textarea></label>
+        </div>
+        <div class="frow">
+          <label class="fld"><span>Image — choose a photo</span><select id="pf-img" style="width:50%;display:inline-block"></select></label>
+          <div class="fld" style="align-self:end"><input type="file" id="pf-upload" accept="image/*"><small style="color:var(--ink-600);font-size:.75rem">or upload a new photo</small></div>
+        </div>
+        <div style="display:flex;gap:.6rem;margin-top:1.1rem">
+          <button class="btn btn-emerald" id="pf-save">Save Product</button>
+          <button class="btn btn-outline" id="pf-cancel">Cancel</button>
+        </div>
+      </div>
+      <table class="admin-table">
+        <thead><tr><th>Image</th><th>Name (EN)</th><th>Price</th><th>Category</th><th>Stock</th><th>Type</th><th></th></tr></thead>
+        <tbody id="admin-tbody"></tbody>
+      </table>
+    </section>
+    <section class="admin-tab" id="tab-orders">
+      <h2 style="font-family:var(--font-serif);margin:0 0 .4rem;color:var(--emerald-900)" data-i18n="ad_orders">Orders</h2>
+      <p id="ad-no-orders" style="font-size:.85rem;color:var(--ink-600);margin-top:0" data-i18n="ad_no_orders">No orders yet. Orders placed with “Checkout via WhatsApp” appear here (in this browser) and arrive on your WhatsApp.</p>
+      <div class="admin-form" style="margin-top:1.2rem">
+        <h3 style="margin-top:0" data-i18n="ad_wa_num">WhatsApp number</h3>
+        <p style="font-size:.85rem;color:var(--ink-600);margin-top:0" data-i18n="ad_wa_hint">International format, digits only (e.g. 905321234567). Customer orders open in WhatsApp on this number.</p>
+        <div style="display:flex;gap:.6rem;margin-top:.8rem;align-items:center">
+          <input id="wa-num" class="keep-ltr" placeholder="905321234567" style="flex:1;max-width:280px;padding:.6rem .7rem;border:1px solid var(--line,#ddd4c2);border-radius:8px;font:inherit;background:var(--bg,#faf7f0)">
+          <button class="btn btn-emerald" id="wa-save">Save</button>
+          <span class="saved-flash" id="wa-saved" hidden>Saved ✓</span>
+        </div>
+      </div>
+      <table class="admin-table" style="margin-top:1.2rem">
+        <thead><tr><th data-i18n="ad_order_no">Order #</th><th data-i18n="ad_date">Date</th><th data-i18n="ad_items">Items</th><th data-i18n="ad_total">Total</th><th data-i18n="ad_status">Status</th><th></th></tr></thead>
+        <tbody id="orders-tbody"></tbody>
+      </table>
+    </section>
+    <section class="admin-tab" id="tab-photos">
+      <h2 style="font-family:var(--font-serif);margin:0 0 1rem;color:var(--emerald-900)" data-i18n="ad_photos">Photos</h2>
+      <div class="admin-form">
+        <h3 style="margin-top:0" data-i18n="ad_phlib">Photo Library</h3>
+        <p style="font-size:.85rem;color:var(--ink-600);margin-top:0">Your uploaded photos. Upload new ones or remove additions.</p>
+        <div class="photo-grid" id="photo-lib"></div>
+        <input type="file" id="ph-upload" accept="image/*" hidden>
+        <button class="btn btn-outline" id="ph-add" data-i18n="ad_phadd">Upload Photo</button>
+      </div>
+      <h3 class="sec-title" data-i18n="ad_slots">Image Slots</h3>
+      <p style="font-size:.85rem;color:var(--ink-600)">Pick which photo appears in each spot on the site. Changes apply everywhere immediately.</p>
+      <div id="slot-list"></div>
+      <div style="margin-top:1.2rem"><button class="btn btn-outline" id="slots-reset" data-i18n="ad_phreset">Reset all to defaults</button></div>
+    </section>
+    <section class="admin-tab" id="tab-content">
+      <h2 style="font-family:var(--font-serif);margin:0 0 .4rem;color:var(--emerald-900)" data-i18n="ad_content">Site Content</h2>
+      <p style="font-size:.85rem;color:var(--ink-600);margin-top:0">Edit key texts in English and Arabic. Applied sitewide on the next page load.</p>
+      <div id="content-rows"></div>
+      <div style="margin-top:1.2rem;display:flex;gap:.6rem">
+        <button class="btn btn-emerald" id="content-save">Save Content</button>
+        <span class="saved-flash" id="content-saved" hidden>Saved ✓</span>
+      </div>
+    </section>
+      </div>
+    </div>
+  </main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="brand-name" data-i18n="brand">AL-ROWDHA</span>
+        <p data-i18n="foot_tag">Handcrafted prayer rugs, robes, mabkharas, and gifting sets — woven, embroidered, and burnished in the heart of Anatolia.</p>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_shop">Shop</h4>
+        <a href="prayer-rugs.html" data-i18n="foot_l1">Prayer Rugs</a>
+        <a href="product-bedding.html" data-i18n="foot_l2">Bedding</a>
+        <a href="product-mabkhara.html" data-i18n="foot_l3">Mabkhara</a>
+        <a href="product-perfume.html" data-i18n="foot_l4">Perfume</a>
+        <a href="product-robe.html" data-i18n="foot_l5">Robes</a>
+        <a href="prayer-rugs.html" data-i18n="foot_l6">Gifting Sets</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_company">Company</h4>
+        <a href="craftsmanship.html" data-i18n="foot_c1">Our Story</a>
+        <a href="craftsmanship.html" data-i18n="foot_c2">Craftsmanship</a>
+        <a href="#" data-i18n="foot_c3">Journal</a>
+        <a href="#" data-i18n="foot_c4">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_help">Help</h4>
+        <a href="#" data-i18n="foot_h1">Shipping &amp; Returns</a>
+        <a href="#" data-i18n="foot_h2">Track Order</a>
+        <a href="#" data-i18n="foot_h3">Size Guide</a>
+        <a href="#" data-i18n="foot_h4">FAQ</a>
+        <a href="#" data-i18n="foot_h5">WhatsApp Support</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot_copy">© 2025 AL-ROWDHA. All rights reserved. Crafted in Turkey.</span>
+      <div class="foot-chips">
+        <span><svg class="ic" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg> <span data-i18n="foot_secure">Secure Checkout</span></span>
+        <span><svg class="ic" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg> <span data-i18n="foot_made">Handcrafted in Turkey</span></span>
+      </div>
+    </div>
+  </div>
+</footer>
+<aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag">
+  <div class="cart-head"><h3 data-i18n="cart_title">Your Bag</h3><button class="icon-btn" onclick="closeCart()" aria-label="Close">✕</button></div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-foot">
+    <div class="cart-total" id="cart-total-row"><span data-i18n="cart_total">Total</span><span class="keep-ltr" id="cart-total-val">$0</span></div>
+    <button class="btn btn-gold btn-block" id="checkout-btn" data-i18n="btn_checkout">Proceed to Checkout</button>
+  </div>
+</aside>
+<div class="drawer-overlay" id="drawer-overlay"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/catalog.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>

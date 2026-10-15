@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+<defs><pattern id="perf" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="2.6" fill="#0a2f26"/></pattern></defs>
+<rect width="400" height="500" fill="#0a2f26"/>
+<path d="M180 96 C150 130 210 160 180 200 M215 80 C195 120 240 150 215 195 M150 120 C140 150 175 170 155 205" fill="none" stroke="#cfc6b2" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+<path d="M200 40 L208 60 L226 66 L208 72 L200 92 L192 72 L174 66 L192 60 Z" fill="#c9a13b"/>
+<path d="M196 92 L204 92 L210 120 L190 120 Z" fill="#b08a2e"/>
+<path d="M130 190 A70 70 0 0 1 270 190 L270 210 L130 210 Z" fill="#c9a13b"/>
+<path d="M130 190 A70 70 0 0 1 270 190 L270 210 L130 210 Z" fill="url(#perf)"/>
+<rect x="130" y="208" width="140" height="10" fill="#b08a2e"/>
+<path d="M118 218 L282 218 L296 300 L104 300 Z" fill="#c9a13b"/>
+<path d="M118 218 L282 218 L296 300 L104 300 Z" fill="url(#perf)" opacity=".9"/>
+<rect x="112" y="298" width="176" height="14" fill="#b08a2e"/>
+<path d="M120 312 L280 312 L268 350 L132 350 Z" fill="#c9a13b"/>
+<path d="M120 312 L280 312 L268 350 L132 350 Z" fill="url(#perf)"/>
+<ellipse cx="200" cy="356" rx="90" ry="10" fill="#b08a2e"/>
+<ellipse cx="200" cy="368" rx="110" ry="8" fill="#0f4234"/>
+</svg>

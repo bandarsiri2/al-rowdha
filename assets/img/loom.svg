@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+<defs><pattern id="latw" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M0 11 L11 0 L22 11 L11 22 Z" fill="none" stroke="#c9a13b" stroke-width="1.1"/></pattern></defs>
+<rect width="600" height="400" fill="#3a2a18"/>
+<rect x="40" y="30" width="520" height="340" rx="10" fill="#5a4226"/>
+<rect x="60" y="50" width="480" height="300" fill="#2b1e10"/>
+<g stroke="#c9a13b" stroke-width="2"><path d="M90 50 V220 M130 50 V220 M170 50 V220 M210 50 V220 M250 50 V220 M290 50 V220 M330 50 V220 M370 50 V220 M410 50 V220 M450 50 V220 M490 50 V220 M530 50 V220" opacity=".8"/></g>
+<rect x="60" y="200" width="480" height="150" fill="#0d3b30"/>
+<rect x="60" y="200" width="480" height="150" fill="url(#latw)" opacity=".6"/>
+<rect x="80" y="222" width="440" height="106" fill="none" stroke="#c9a13b" stroke-width="3"/>
+<circle cx="300" cy="275" r="34" fill="none" stroke="#c9a13b" stroke-width="2.5"/>
+<path d="M300 245 L308 268 L331 275 L308 282 L300 305 L292 282 L269 275 L292 268 Z" fill="#c9a13b"/>
+<rect x="40" y="192" width="520" height="16" rx="4" fill="#7a5c34"/>
+<path d="M55 60 H545 M55 340 H545" stroke="#7a5c34" stroke-width="14"/>
+</svg>

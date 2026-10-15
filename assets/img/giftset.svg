@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<defs><pattern id="latg" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="#c9a13b" stroke-width="1"/></pattern></defs>
+<rect width="400" height="300" fill="#efe6d4"/>
+<rect x="100" y="120" width="200" height="120" rx="8" fill="#0d3b30"/>
+<rect x="100" y="120" width="200" height="120" rx="8" fill="url(#latg)" opacity=".4"/>
+<rect x="100" y="112" width="200" height="26" rx="6" fill="#0f4234" stroke="#c9a13b" stroke-width="2"/>
+<rect x="188" y="112" width="24" height="128" fill="#c9a13b"/>
+<path d="M200 112 C168 84 148 104 172 112 M200 112 C232 84 252 104 228 112" fill="none" stroke="#c9a13b" stroke-width="5"/>
+<circle cx="200" cy="104" r="10" fill="#c9a13b"/>
+<circle cx="150" cy="180" r="16" fill="#0a2f26" stroke="#c9a13b" stroke-width="2"/>
+<circle cx="250" cy="180" r="16" fill="#0a2f26" stroke="#c9a13b" stroke-width="2"/>
+</svg>

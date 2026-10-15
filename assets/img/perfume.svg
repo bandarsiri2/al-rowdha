@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+<rect width="400" height="500" fill="#0a2f26"/>
+<circle cx="310" cy="120" r="60" fill="#0f4234" opacity=".7"/>
+<circle cx="80" cy="380" r="80" fill="#0f4234" opacity=".5"/>
+<path d="M240 60 C200 100 260 140 220 180 M280 40 C250 90 300 120 270 170" fill="none" stroke="#c9a13b" stroke-width="1.5" opacity=".4"/>
+<rect x="160" y="80" width="80" height="52" rx="8" fill="#c9a13b"/>
+<g stroke="#0a2f26" stroke-width="2"><path d="M160 96 h80 M160 116 h80" opacity=".5"/><path d="M180 80 l10 26 -10 26 M220 80 l10 26 -10 26" fill="none"/></g>
+<rect x="176" y="132" width="48" height="24" fill="#b08a2e"/>
+<path d="M150 156 L250 156 Q272 156 272 180 L272 400 Q272 424 248 424 L152 424 Q128 424 128 400 L128 180 Q128 156 150 156 Z" fill="#2b1a10"/>
+<path d="M150 156 L250 156 Q272 156 272 180 L272 400 Q272 424 248 424 L152 424 Q128 424 128 400 L128 180 Q128 156 150 156 Z" fill="url(#g)" opacity=".35"/>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".35"/><stop offset=".3" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity=".4"/></linearGradient></defs>
+<rect x="156" y="240" width="88" height="110" fill="#1d1008" stroke="#c9a13b" stroke-width="2"/>
+<text x="200" y="288" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="2" fill="#c9a13b">AL-ROWDHA</text>
+<line x1="172" y1="302" x2="228" y2="302" stroke="#c9a13b" stroke-width="1"/>
+<text x="200" y="324" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="3" fill="#c9a13b">OUD PERFUME</text>
+<path d="M128 400 Q128 424 152 424 L248 424 Q272 424 272 400 L272 412 Q272 430 250 432 L150 432 Q128 430 128 412 Z" fill="#120a05"/>
+<path d="M60 448 L340 448" stroke="#c9a13b" stroke-width="2" opacity=".5"/>
+<path d="M150 460 Q200 470 250 460" fill="none" stroke="#c9a13b" stroke-width="2" opacity=".5"/>
+</svg>

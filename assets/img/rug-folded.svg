@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<defs><pattern id="latf" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 10 L10 0 L20 10 L10 20 Z" fill="none" stroke="#c9a13b" stroke-width="1"/></pattern></defs>
+<rect width="400" height="300" fill="#efe6d4"/>
+<path d="M80 190 L320 190 L330 230 L70 230 Z" fill="#0f4234" stroke="#c9a13b" stroke-width="3"/>
+<path d="M80 190 L320 190 L330 230 L70 230 Z" fill="url(#latf)" opacity=".5"/>
+<path d="M85 150 L315 150 L325 190 L75 190 Z" fill="#0d3b30" stroke="#c9a13b" stroke-width="3"/>
+<path d="M85 150 L315 150 L325 190 L75 190 Z" fill="url(#latf)" opacity=".5"/>
+<path d="M90 110 L310 110 L320 150 L80 150 Z" fill="#0a2f26" stroke="#c9a13b" stroke-width="3"/>
+<path d="M90 110 L310 110 L320 150 L80 150 Z" fill="url(#latf)" opacity=".5"/>
+<circle cx="200" cy="122" r="10" fill="#c9a13b"/>
+</svg>
